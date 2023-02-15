@@ -2,7 +2,7 @@ import os
 import openai
 
 # Set the OpenAI API key
-openai.api_key = "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"
+openai.api_key = "API-key"
 
 # Define the generate_prompt function
 def generate_prompt():
