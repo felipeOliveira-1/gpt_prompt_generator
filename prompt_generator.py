@@ -3,7 +3,7 @@ import openai
 import sys
 
 # Set the OpenAI API key
-openai.api_key = "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"
+openai.api_key = ""
 
 def get_user_input():
     option = input("Please choose an option:\n1. Simulate an expert\n2. Challenge the conventional narrative\n3. Use unconventional prompts\n4. Ultra-Brainstormer\n5. Add in human-written techniques\n6. Write from different perspectives\n7. Write in different styles or tones, such as satire or irony\n")
@@ -18,8 +18,8 @@ def get_user_input():
 
     if option == '1':
         desired_prompt = input("\nPlease enter the prompt you want GPT-3 to respond to: ")
-        role = "an expert"
-        additional_info = ""
+        role =  input("\nWhat role should GPT-3 act as in the prompt? (e.g. a teacher, a scientist) ")
+        additional_info = input("\nAny additional information or context to add to the prompt? ")
 
     elif option == '2':
         desired_prompt = input("\nPlease enter the prompt you want GPT-3 to respond to: ")
@@ -79,7 +79,7 @@ def generate_response(prompt):
 def generate_prompt():
     option, desired_prompt, role, additional_info = get_user_input()
 
-    prompt = f"Act as {role}. {additional_info}. {desired_prompt}"
+    prompt = f"Act as {role}. {desired_prompt}, {additional_info}. "
     print("Here's an example of a prompt you could use:")
     print(prompt)
 
