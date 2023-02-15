@@ -5,9 +5,9 @@ import openai
 openai.api_key = ""
 
 def get_user_input():
-    desired_prompt = input("Please enter the prompt you want GPT-3 to respond to: ")
-    role = input("What role should GPT-3 act as in the prompt? (e.g. a teacher, a scientist) ")
-    additional_info = input("Any additional information or context to add to the prompt? Ex. Prompt: Write an essay about the importance of exercise. Additional information/context: Your audience is a group of sedentary office workers who are looking for ways to improve their physical health and reduce stres: ")
+    desired_prompt = input("\nPlease enter the prompt you want GPT-3 to respond to: ")
+    role = input("\nWhat role should GPT-3 act as in the prompt? (e.g. a teacher, a scientist) ")
+    additional_info = input("\nAny additional information or context to add to the prompt? \nExample:\nPrompt: Write an essay about the importance of exercise. \nAdditional information/context: Your audience is a group of sedentary office workers who are looking for ways to improve their physical health and reduce stres\n")
 
     return desired_prompt, role, additional_info
 

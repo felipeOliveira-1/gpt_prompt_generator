@@ -1,4 +1,4 @@
-# GPT-3 Prompt Generator
+# GPT-3 Prompt Generator V-2.0
 This repository contains a Python script that generates prompts for the OpenAI GPT-3 API. The script prompts the user for the desired prompt, the role the GPT-3 model should act as, and any additional information or context to add to the prompt. The script then uses the OpenAI API to generate a response based on the input.
 
 ## Getting Started
