@@ -22,7 +22,7 @@ pip install openai
 ```Python
 python gpt3_prompt_generator.py
 ```
-6.Follow the prompts in the terminal to generate a response from GPT-3
+6. Follow the prompts in the terminal to generate a response from GPT-3
 
 ## Usage
 To use the program, run the prompt_generator.py script from the command line. You will be prompted to select an option, enter a desired prompt, and provide additional information and context. The program will then generate a response using the GPT-3 API and print it to the console.
@@ -37,6 +37,7 @@ Here are the available options for generating prompts:
 5. Add in human-written techniques
 6. Write from different perspectives
 7. Write in different styles or tones, such as satire or irony
+
 Select the option that best suits your needs, and follow the prompts to generate a response.
 
 ## Limitations
