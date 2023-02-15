@@ -38,7 +38,4 @@ def generate_prompt():
     prompt = create_prompt(desired_prompt, role, additional_info)
     generated_prompt = generate_response(prompt)
     return generated_prompt
-
-generate_prompt()
-
 print(generate_prompt())
