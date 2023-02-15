@@ -40,3 +40,5 @@ def generate_prompt():
     return generated_prompt
 
 generate_prompt()
+
+print(generate_prompt())
