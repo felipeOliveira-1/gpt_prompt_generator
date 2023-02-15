@@ -1,4 +1,4 @@
-# GPT-3 Prompt Generator V-2.0
+# GPT-3 Prompt Generator V-3.0
 This is a Python program that uses OpenAI's GPT-3 API to generate prompts for various purposes, including simulating an expert, challenging the conventional narrative, brainstorming ideas, and more.
 
 ## Prerequisite
