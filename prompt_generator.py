@@ -6,7 +6,7 @@ import sys
 openai.api_key = ""
 
 def get_user_input():
-    option = input("Please choose an option:\n1. Simulate an expert\n2. Challenge the conventional narrative\n3. Use unconventional prompts\n4. Ultra-Brainstormer\n5. Add in human-written techniques\n6. Write from different perspectives\n7. Write in different styles or tones, such as satire or irony\n")
+    option = input("Please choose an option:\n1. Simulate an expert\n2. Challenge the conventional narrative\n3. Use unconventional prompts\n4. Ultra-Brainstormer\n5. Add in human-written techniques\n6. Write from different perspectives\n7. Write in different styles or tones, such as satire or irony\n\n")
     desired_prompt = input("\nPlease enter the prompt you want GPT-3 to respond to: ")
     role = input("\nWhat role should GPT-3 act as in the prompt? (e.g. a teacher, a scientist) ")
     additional_info = input("\nAny additional information or context to add to the prompt? ")
