@@ -1,5 +1,5 @@
-# GPT-3 Prompt Generator V-3.0
-This is a Python program that uses OpenAI's GPT-3 API to generate prompts for various purposes, including simulating an expert, challenging the conventional narrative, brainstorming ideas, and more.
+# GPT-3 Prompt Generator V-4.0
+This is a command-line tool that generates a prompt for the OpenAI GPT-3 language model and returns a response..
 
 ## Prerequisite
 * Python 3.7 or later
@@ -33,10 +33,7 @@ Here are the available options for generating prompts:
 1. Simulate an expert
 2. Challenge the conventional narrative
 3. Use unconventional prompts
-4. Ultra-Brainstormer
-5. Add in human-written techniques
-6. Write from different perspectives
-7. Write in different styles or tones, such as satire or irony
+4. Write in different styles or tones, such as satire or irony
 
 Select the option that best suits your needs, and follow the prompts to generate a response.
 
