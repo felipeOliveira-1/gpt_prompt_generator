@@ -2,7 +2,7 @@ import openai
 import sys
 
 # Set the OpenAI API key
-openai.api_key = "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"
+openai.api_key = ""
 
 def get_user_input():
     """Get user input for the desired option, prompt, role, and additional information."""
