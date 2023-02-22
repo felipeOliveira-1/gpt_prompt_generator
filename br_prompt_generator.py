@@ -10,7 +10,7 @@ def get_user_input():
 
     if option == '1':
         desired_prompt = input("\nPor favor, digite o prompt que você deseja que o GPT-3 responda: ")
-        role_choice = input("\Por favor, escolha uma função para GPT-3 para atuar como no prompt:\n1. Um professor\n2. Um cientista\n3. Digite sua própria função\Digite um número: ")
+        role_choice = input("\Por favor, escolha uma função para GPT-3 para atuar como no prompt:\n1. Um professor\n2. Um cientista\n3. Digite sua própria função\nDigite um número: ")
     
         while role_choice not in ['1', '2', '3']:
             role_choice = input("Escolha de função inválida. Insira um número válido ou digite sua própria função: ")
