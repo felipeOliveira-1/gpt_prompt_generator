@@ -63,8 +63,36 @@ def get_user_input():
         top_p=1,
         frequency_penalty=0,
         presence_penalty=0
-)
+    )
+    print(response.choices[0].text)      
 
-    print(response.choices[0].text)
-       
+    # Ask user if they want to enter critical mode
+    critical_mode = input("\nDo you want to enter critical mode? (y/n): ")
+    if critical_mode.lower() == 'y':
+    # Construct new prompt for critical mode
+        prompt = f"Based on what you answered, I want you to act as a critic. Criticize these answers and convince me why they are bad. Let's think step by step and provide a new one. {response.choices[0].text}"
+
+    # Use OpenAI API to generate response for critical mode
+        response = openai.Completion.create(
+        engine="text-davinci-003",
+        prompt=prompt,
+        temperature=0.7,
+        max_tokens=1024,
+        top_p=1,
+        frequency_penalty=0,
+        presence_penalty=0
+    )
+
+    # Print response for critical mode
+    print(response.choices[0].text)      
+
+    # Ask user if they want to continue with critical mode
+    #critical_mode = input("\nDo you want to continue with critical mode? (y/n): ")
+
 get_user_input()
+
+
+
+
+    
+       
