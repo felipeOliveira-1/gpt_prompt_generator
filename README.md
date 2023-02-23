@@ -1,5 +1,8 @@
 # GPT-3 Prompt Generator V-4.0
-This is a command-line tool that generates a prompt for the OpenAI GPT-3 language model and returns a response..
+This is a command-line tool that generates a prompt for the OpenAI GPT-3 language model and returns a response.
+
+
+![alt text](https://github.com/felipeOliveira-1/gpt3_prompt_generator/blob/main/example.jpeg?raw=true)
 
 ## Prerequisite
 * Python 3.7 or later
