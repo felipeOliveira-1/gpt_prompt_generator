@@ -86,9 +86,7 @@ def get_user_input():
     # Print response for critical mode
     print(response.choices[0].text)      
 
-    # Ask user if they want to continue with critical mode
-    #critical_mode = input("\nDo you want to continue with critical mode? (y/n): ")
-
+    
 get_user_input()
 
 
