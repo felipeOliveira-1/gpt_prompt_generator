@@ -1,5 +1,5 @@
 # GPT-3 Prompt Generator V-4.0
-This is a command-line tool that generates a prompt for the OpenAI GPT-3 language model and returns a response.
+A command-line prompt generator for OpenAI's GPT-3 language model! With just a few simple commands, you can generate a prompt and receive a response from one of the most advanced language models available today. And now, with the new critic mode feature, you can even get feedback and receive a new response. Get ready to unlock the full potential of GPT-3!
 
 
 ![alt text](https://github.com/felipeOliveira-1/gpt3_prompt_generator/blob/main/example.jpeg?raw=true)
