@@ -1,8 +1,9 @@
-import openai
 import sys
+sys.path.append("C:/Lib/site-packages")
+import openai
 
 # Set the OpenAI API key
-openai.api_key = ""
+openai.api_key = "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"
 
 def get_user_input():
     """Obtenha entrada do usuário para a opção desejada, prompt, função e informações adicionais."""
@@ -55,7 +56,7 @@ def get_user_input():
     print("\nAqui está um exemplo de prompt que você pode usar:\n")
     print(prompt)
 
-    response = openai.Completion.create(
+    response = kabalah_chat.Completion.create(
         engine="text-davinci-003",
         prompt=prompt,
         temperature=0.7,
