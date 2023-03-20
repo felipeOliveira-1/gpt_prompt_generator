@@ -15,6 +15,10 @@ This Python script uses OpenAI's GPT-4 engine to simulate a variety of experts i
 * Consult Celebrity: The AI criticizes an argument or opinion as if it were a specific person.
 
 * Social Media Plan: The AI generates a creative social media content calendar for a product or company.
+<<<<<<< HEAD
+=======
+
+>>>>>>> 7da7660bebc58029e63a44e0ff4ba06e5982920a
 
 ## Usage
 Ensure you have Python 3.x installed.
@@ -26,6 +30,10 @@ pip install openai
 ``
 
 Replace the placeholder API key in the script with your own OpenAI API key.
+<<<<<<< HEAD
+=======
+
+>>>>>>> 7da7660bebc58029e63a44e0ff4ba06e5982920a
 Run the script: 
 
 ``
