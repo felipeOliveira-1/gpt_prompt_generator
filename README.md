@@ -25,6 +25,7 @@ Install the openai package using pip:
 ``
 pip install openai
 ``
+
 Replace the placeholder API key in the script with your own OpenAI API key.
 
 Run the script: 
@@ -32,6 +33,7 @@ Run the script:
 ``
 python prompt_generator_v5.py
 ``
+
 Follow the prompts to choose an option, provide the required information, and receive the AI-generated response.
 Optionally, enter critical mode to have the AI critique and improve its own generated content.
 
