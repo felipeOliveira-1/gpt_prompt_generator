@@ -9,6 +9,8 @@ This Python script uses OpenAI's GPT-4 engine to simulate a variety of experts i
 
 * Write in Different Styles: The AI generates content in various writing styles and tones.
 
+* Critical Mode (Optional): After displaying the generated text, the program asks the user whether they want to enter "critical mode." If the user answers 'y' (yes), the program constructs a new prompt that asks the GPT-3.5 model to act as a critic and criticize the previously generated response, providing a new perspective. The program then displays the critical response.
+
 ## Usage
 Ensure you have Python 3.x installed.
 
