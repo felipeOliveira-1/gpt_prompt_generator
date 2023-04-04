@@ -1,5 +1,5 @@
 ## OpenAI Prompt Generator, Expert Simulation with Prompt Filter
-This Python script uses OpenAI's GPT-4 engine to simulate a variety of experts in different scenarios. The user selects an option from a list, and the AI generates a response according to the chosen role and prompt. Additionally, the script features a critical mode, where the AI can critique and improve its own generated content. A unique aspect of this script is the prompt filter, which helps create more refined prompts for the AI to answer.
+This Python script uses OpenAI's GPT-3.5 engine to simulate a variety of experts in different scenarios. The user selects an option from a list, and the AI generates a response according to the chosen role and prompt. Additionally, the script features a critical mode, where the AI can critique and improve its own generated content. A unique aspect of this script is the prompt filter, which helps create more refined prompts for the AI to answer.
 
 ## Features
 
