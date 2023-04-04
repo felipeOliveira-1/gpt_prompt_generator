@@ -10,12 +10,6 @@ This Python script uses OpenAI's GPT-4 engine to simulate a variety of experts i
 
 * Write in Different Styles: The AI generates content in various writing styles and tones.
 
-* Accelerate Learning: The AI explains a complex topic in simple terms, as if the user were 11 years old.
-
-* Consult Celebrity: The AI criticizes an argument or opinion as if it were a specific person.
-
-* Social Media Plan: The AI generates a creative social media content calendar for a product or company.
-
 ## Usage
 Ensure you have Python 3.x installed.
 
