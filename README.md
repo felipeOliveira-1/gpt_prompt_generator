@@ -2,7 +2,6 @@
 This Python script uses OpenAI's GPT-4 engine to simulate a variety of experts in different scenarios. The user selects an option from a list, and the AI generates a response according to the chosen role and prompt. Additionally, the script features a critical mode, where the AI can critique and improve its own generated content. A unique aspect of this script is the prompt filter, which helps create more refined prompts for the AI to answer.
 
 ## Features
-* Prompt Filter: A roleplay-based filter that refines the user's input to create a perfect prompt for the AI.
 
 * Simulate Expert: The AI simulates an expert in a chosen field.
 
