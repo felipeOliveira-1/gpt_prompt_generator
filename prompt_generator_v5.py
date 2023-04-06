@@ -3,7 +3,7 @@ import os
 import traceback
 
 # Set the OpenAI API key
-openai.api_key = "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"
+openai.api_key = ""
 
 # Set the engine name
 engine_name = "gpt-3.5-turbo"
