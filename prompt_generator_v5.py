@@ -1,10 +1,12 @@
 import openai
+import os
+import traceback
 
 # Set the OpenAI API key
-openai.api_key = ""
+openai.api_key = "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"
 
 # Set the engine name
-engine_name = "text-davinci-003"
+engine_name = "gpt-3.5-turbo"
 
 
 def get_user_input():
@@ -38,6 +40,7 @@ def get_user_input():
             role = roles[role_choice -
                          1] if role_choice != len(roles) else input("Enter the role: ")
             additional_info = input("Any additional information or context? ")
+            user_message = desired_prompt + ". " + additional_info + "."
 
         elif choice == 2:
             topic = input("Enter a Topic: ")
@@ -45,6 +48,7 @@ def get_user_input():
             desired_prompt = f"For the topic about {topic}, give examples that contradict the dominant narrative that said {dominant_narrative}."
             role = "a thought-provoking writer"
             additional_info = ""
+            user_message = desired_prompt
 
         elif choice == 3:
             desired_prompt = input("Enter the prompt: ")
@@ -62,35 +66,51 @@ def get_user_input():
                 styles) else input("Enter the style or tone: ")
             role = f"a {style} writer"
             additional_info = ""
+            user_message = desired_prompt
 
-        prompt = f"Act as {role}. {desired_prompt}. {additional_info}."
+        # Define the initial role and message for the conversation
+        conversation = [{"role": "user", "content": user_message}]
         response = openai.ChatCompletion.create(
-            model="gpt-3.5-turbo",
-            prompt=prompt,
-            temperature=0.7,
-            max_tokens=150,
-            top=1,
-            frequency_penalty=0,
-            presence_penalty=0
-        )
-        print(response.choices[0].text)
-
-        critical_mode = input("Do you want to enter critical mode? (y/n): ")
-        if critical_mode.lower() == 'y':
-            prompt = f"Act as a critic. Criticize these answers and convince me why they are bad. Let's think step by step and provide a new perspective. {response.choices[0].text}"
-        response = openai.Completion.create(
-            engine=engine_name,
-            prompt=prompt,
+            model=engine_name,
+            messages=conversation,
             temperature=0.7,
             max_tokens=150,
             top_p=1,
             frequency_penalty=0,
             presence_penalty=0
         )
-        print(response.choices[0].text)
+        print(response.choices[0].message.content)
+
+        critical_mode = input("Do you want to enter critical mode? (y/n): ")
+        if critical_mode.lower() == 'y':
+            # Map the custom role to a predefined role
+            mapped_role = "assistant" if role in [
+                "a teacher", "a scientist"] else "user"
+
+        # Add the AI-generated response to the conversation
+        ai_response = response.choices[0].message.content
+        conversation.append(
+            {"role": mapped_role, "content": ai_response})
+
+        # Add the critic's message to the conversation, including the previous response
+        critic_message = f"Act as a good critic. Criticize this answer: '{ai_response}'. Convince me why it can be improve. Let's think step by step and provide a new perspective."
+        conversation.append({"role": "user", "content": critic_message})
+
+        response = openai.ChatCompletion.create(
+            model=engine_name,
+            messages=conversation,
+            temperature=0.7,
+            max_tokens=150,
+            top_p=1,
+            frequency_penalty=0,
+            presence_penalty=0
+        )
+        print(response.choices[0].message.content)
 
     except Exception as e:
         print(f"An error occurred: {e}")
+        traceback.print_exc()
 
 
+# Call the get_user_input function
 get_user_input()
