@@ -1,8 +1,7 @@
 ## OpenAI Prompt Generator, Expert Simulation with Prompt Filter
-This Python script uses OpenAI's GPT-4 engine to simulate a variety of experts in different scenarios. The user selects an option from a list, and the AI generates a response according to the chosen role and prompt. Additionally, the script features a critical mode, where the AI can critique and improve its own generated content. A unique aspect of this script is the prompt filter, which helps create more refined prompts for the AI to answer.
+This Python script uses OpenAI's GPT-3.5 engine to simulate a variety of experts in different scenarios. The user selects an option from a list, and the AI generates a response according to the chosen role and prompt. Additionally, the script features a critical mode, where the AI can critique and improve its own generated content. A unique aspect of this script is the prompt filter, which helps create more refined prompts for the AI to answer.
 
 ## Features
-* Prompt Filter: A roleplay-based filter that refines the user's input to create a perfect prompt for the AI.
 
 * Simulate Expert: The AI simulates an expert in a chosen field.
 
@@ -10,11 +9,7 @@ This Python script uses OpenAI's GPT-4 engine to simulate a variety of experts i
 
 * Write in Different Styles: The AI generates content in various writing styles and tones.
 
-* Accelerate Learning: The AI explains a complex topic in simple terms, as if the user were 11 years old.
-
-* Consult Celebrity: The AI criticizes an argument or opinion as if it were a specific person.
-
-* Social Media Plan: The AI generates a creative social media content calendar for a product or company.
+* Critical Mode (Optional): After displaying the generated text, the program asks the user whether they want to enter "critical mode." If the user answers 'y' (yes), the program constructs a new prompt that asks the GPT-3.5 model to act as a critic and criticize the previously generated response, providing a new perspective. The program then displays the critical response.
 
 ## Usage
 Ensure you have Python 3.x installed.
